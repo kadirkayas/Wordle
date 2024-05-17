@@ -23,8 +23,7 @@ export const GamePanel: React.FC<GamePanelProps> = ({ word, guesses }) =>  {
             {guesses.map((guess,index)=>(
                 <Line key={index} guess={guess} word={word}/>
             ))}
-            {isWin && <h1 style={{color:"green"}}>you win</h1>}
-            
+            {isWin && <h1 style={{color:"green"}}>You Winn!!!</h1>}
         </div>
     )
 }
