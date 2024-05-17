@@ -1,0 +1,90 @@
+.block {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+.block.correct {
+    background-color: green;
+  }
+  
+  .block.have {
+    background-color: yellow;
+  }
+  
+  .block.wrong {
+    background-color: grey;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: green;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color:greenyellow;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .key {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .key.clicked {
+    background-color: greenyellow;
+  }
+  
+  .key:hover {
+    background-color: green;
+  }
